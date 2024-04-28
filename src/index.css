@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Whisper&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  
+  .outer-circle {
+    position: relative;
+    max-height: 24rem;
+    max-width: 24rem;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+  }
+
+  .outer-circle spinner {
+    position: absolute;
+    max-height: 24rem;
+    max-width: 24rem;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+  }
+
+  spinner:nth-child(1) {
+    filter: blur(5px);
+  }
+
+  spinner:nth-child(2) {
+    filter: blur(10px);
+  }
+
+  spinner:nth-child(3) {
+    filter: blur(25px);
+  }
+
+  spinner:nth-child(4) {
+    filter: blur(150px);
+  }
+
+  .inner-circle {
+    max-height: 22rem;
+    max-width: 22rem;
+    height: 100vh;
+    width: 100vw;
+    top: 16px;
+    left: 16px;
+    background: #0a0a0a;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .inner-circle img {
+    position: absolute;
+    margin-top: -25px;
+    max-height: 23rem;
+    max-width: 23rem;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 50%;
+  }
+
+  @keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  @media (max-width: 450px) {
+    .outer-circle {
+      max-height: 20rem;
+      max-width: 20rem;
+    }
+    .outer-circle spinner {
+      max-height: 20rem;
+      max-width: 20rem;
+    }
+    .inner-circle {
+      top: 16px;
+      left: 16px;
+      max-height: 18rem;
+      max-width: 18rem;
+    }
+    .inner-circle img {
+      max-width: 18rem;
+      max-height: 18rem;
+    }
+    .go-glow{
+      box-shadow: 20px 20px 50px 15px red;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1f1e1e;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #df2020;
+  border-radius: 50%;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e7890d;
+  }
+}
