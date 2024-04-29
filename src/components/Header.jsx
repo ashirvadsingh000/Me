@@ -8,7 +8,7 @@ import { MdCastForEducation } from "react-icons/md";
 import { GrWorkshop } from "react-icons/gr";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { GoProjectSymlink } from "react-icons/go";
-
+import { GiBrain } from "react-icons/gi";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -53,6 +53,11 @@ const Header = () => {
               <Link spy={true} smooth={true} to="Project">
               <li className="ng hover:underline underline-offset-4 hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                 PROJECTS
+              </li>
+              </Link>
+              <Link spy={true} smooth={true} to="hobbies">
+              <li className="ng hover:underline underline-offset-4 hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
+                HOBBIES
               </li>
               </Link>
               <Link spy={true} smooth={true} to="Contact">
@@ -106,6 +111,12 @@ const Header = () => {
                 <li className="ng   border-red-500 border-b-2  hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                 <GoProjectSymlink />
                   PROJECTS
+                </li>
+                </Link>
+                <Link spy={true} smooth={true} to="hobbies">
+                <li className="ng   border-red-500 border-b-2  hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
+                <GiBrain />
+                  HOBBIES
                 </li>
                 </Link>
 

@@ -6,6 +6,7 @@ import "./index.css";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Project from "./components/Project";
+import Hobbies from "./components/Hobbies";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Skills />
         <Education />
         <Project />
+        <Hobbies />
       </div>
   );
 };
