@@ -29,7 +29,7 @@ const Skills = () => {
 
   return (
   <>
-  <div id="Skills" className="  flex flex-col items-center justify-center p-10 pt-10 pb-20">
+  <div id="Skills" className="  flex flex-col items-center h-screen justify-center p-10 pt-10 pb-20">
 <h3 data-aos="fade-left"  className=" self-center text-4xl font-anta italic text-white hover:text-red-900 font-semibold"> TECH STACK</h3>
 <div className="grid  md:grid-cols-6 grid-cols-3 gap-5 mt-5">
     

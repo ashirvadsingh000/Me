@@ -19,7 +19,7 @@
 }
 .serviceBox:before{
     content: "";
-    background: #fff;
+    background: #e7e3e391;
     width: calc( 100% - 15px);
     border-radius: 13px;
     height: calc(100% - 38px);

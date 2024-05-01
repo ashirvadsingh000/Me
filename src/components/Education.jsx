@@ -14,12 +14,12 @@ const Education = () => {
     });
   }, []);
   return (
-    <>
-     <div id="Education" class="container self-center md:w-1/2 p-5  flex flex-col ">
+    <div div className="rd flex items-center justify-center">
+     <div id="Education" class="container items-center justify-center w-screen  md:pt-20 sm:pt-10 p-2 flex flex-col ">
       <h3 data-aos="fade-down" className="text-white self-center font-anta text-4xl font-semibold italic mb-5 hover:text-red-900">EDUCATION</h3>
     <div class="row  ">
         <div data-aos="fade-right" class="col-md-3 col-sm-6">
-            <div class="serviceBox">
+            <div class="serviceBox ">
                 <div class="service-icon">
                     <span><i className="fa fa-globe flex  justify-center p-6" > <img src={logo} alt="" className="h-[50px]" /></i></span>
                 </div>
@@ -41,7 +41,7 @@ const Education = () => {
         </div>
     </div>
 </div>
-    </>
+    </div>
   );
 };
 

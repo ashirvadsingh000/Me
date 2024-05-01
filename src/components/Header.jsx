@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-scroll";
+
 import { MdMenuBook } from "react-icons/md";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { RiServiceFill } from "react-icons/ri";
@@ -32,7 +33,9 @@ const Header = () => {
             <ul className="option flex flex-row gap-x-8  font-semibold ">
               <Link spy={true} smooth={true} to="Home">
               <li className="ng hover:underline underline-offset-4 hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire" onClick={() => scrollToRef(homeRef)}>
-                HOME
+            
+               HOME
+            
               </li>
               </Link>
               <Link spy={true} smooth={true} to="Service">
@@ -50,7 +53,7 @@ const Header = () => {
                 EDUCATION
               </li>
               </Link>
-              <Link spy={true} smooth={true} to="Project">
+              <Link spy={true} smooth={true} to="Project" >
               <li className="ng hover:underline underline-offset-4 hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                 PROJECTS
               </li>
@@ -60,7 +63,7 @@ const Header = () => {
                 HOBBIES
               </li>
               </Link>
-              <Link spy={true} smooth={true} to="Contact">
+              <Link spy={true} smooth={true} to="contact">
               <li className="ng hover:underline underline-offset-4 hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                 CONTACT
               </li>
@@ -120,7 +123,7 @@ const Header = () => {
                 </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="Contact">
+                <Link spy={true} smooth={true} to="contact">
                 <li className="ng   border-red-500 border-b-2  hover:text-red-700 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   <RiCustomerService2Fill />
                   CONTACT
