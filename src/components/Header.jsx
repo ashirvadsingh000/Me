@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <head className=" flex flex-col gap-2 relative ">
+      <head className=" flex flex-col gap-2 relative " >
         <div className="navbar md:max-h-14 md:h-screen bg-white bg-opacity-10 flex backdrop-brightness-50 z-50 text-white flex-row justify-between items-center font-poppins italic px-7 rounded-full fixed w-screen mt-1 max-h-10">
           <div
             className="navbar_left  text-3xl font-bold text-shadow-xl cursor-pointer
