@@ -13,7 +13,7 @@ const Hobbies = () => {
       delay: 8000,
       duration: 50000,
     });
-  }, []);
+  }, []); 
   return (
     <div
       id="hobbies"
